@@ -1,0 +1,439 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+.heading1 {
+  font-family: 'Lato';
+  text-transform: uppercase;
+  font-size: 63px;
+}
+.heading2 {
+  font-family: 'Lato';
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 27px;
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+.subheader1 {
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 24px;
+  color: #a3a3a3;
+  margin-top: 30px;
+}
+.subheader2 {
+  font-family: Georgia;
+  font-style: italic;
+  color: #a3a3a3;
+  margin-top: 15px;
+  font-size: 18px;
+}
+.heading3 {
+  font-family: 'Lato';
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.link {
+  font-family: 'Lato';
+  font-size: 16px;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.btn1 {
+  background: #fff;
+  color: black;
+  border: 1px solid #95999b;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.btn1:hover {
+  background: #a3a3a3;
+}
+.btn2 {
+  font-family: 'Lato';
+  color: white;
+  font-size: 14px;
+  text-transform: lowercase;
+  background: #f68236;
+  margin-left: -4px;
+  width: 94px;
+  height: 54px;
+  border: 0;
+}
+.btn2:hover {
+  background: #e67429;
+}
+.lg {
+  width: 230px;
+  height: 58px;
+}
+.md {
+  width: 200px;
+  height: 55px;
+}
+.sm {
+  width: 174px;
+  height: 53px;
+}
+.spacing {
+  margin: 10px auto;
+  padding: auto 30px;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  background: #e5e5e5;
+}
+body {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  margin: auto auto;
+  height: 16.5vh;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+header nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: -10px;
+  margin-left: 29px;
+  margin-right: 34px;
+  color: white;
+  background: #000;
+  width: 35px;
+  height: 40px;
+  font-family: 'Lato';
+  font-weight: bold;
+}
+header nav .links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -8px;
+  font-size: 15px;
+  width: 73.8%;
+}
+header nav .links li {
+  display: inline;
+}
+header nav .links a {
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+  font-family: 'Lato';
+  font-size: 16px;
+}
+header nav .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 35px;
+  height: 35px;
+}
+header nav .basket {
+  margin-top: -5px;
+  margin-left: 25px;
+}
+header nav .basket i {
+  font-size: 20px;
+}
+header nav .basket span {
+  font-family: 'Lato';
+  font-size: 15px;
+  margin-left: 2px;
+}
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: middle;
+  background: #fff;
+  height: 400px;
+  padding-top: 90px;
+}
+.pic-greed {
+  width: 100%;
+  padding: 0 30px;
+  padding-top: 85px;
+  background: #fff;
+  height: 666px;
+}
+.pic-greed .row {
+  width: 100%;
+  height: 270px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: top;
+}
+.pic-greed .row .pic {
+  background: #1c3c8d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  border: 1px solid black;
+  margin: 0;
+}
+.pic-greed .row .pic h2 {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: -2px;
+  font-size: 33px;
+  line-height: 33px;
+  font-weight: 900;
+  white-space: pre-wrap;
+  text-align: center;
+  word-wrap: break-word;
+}
+.pic-greed .row .pic h3 {
+  margin-top: 10px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.pic-greed .row .pic-1 {
+  background: url(../img/sheets/square1.png);
+}
+.pic-greed .row .pic-2 {
+  background: url(../img/sheets/square4.png);
+}
+.pic-greed .row .pic-3 {
+  background: url(../img/sheets/square8.png);
+}
+.pic-greed .row .pic-4 {
+  background: url(../img/sheets/square1.png);
+}
+.pic-greed .row .pic-5 {
+  background: url(../img/sheets/square4.png);
+}
+.pic-greed .row .pic-6 {
+  background: url(../img/sheets/square8.png);
+}
+.pic-greed .row .pic-7 {
+  background: url(../img/sheets/square1.png);
+}
+.pic-greed .row .pic-8 {
+  background: url(../img/sheets/square4.png);
+}
+.subscribe-form {
+  background: #fff;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.subscribe-form form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato';
+  margin-top: 50px;
+}
+.subscribe-form form .email-form input {
+  padding: 20px 10px;
+  width: 430px;
+  height: 54px;
+  font-style: italic;
+  font-size: 11px;
+}
+.subscribe-form form .submit input {
+  font-family: 'Lato';
+  color: white;
+  font-size: 14px;
+  text-transform: lowercase;
+  background: #f68235;
+  margin-left: -4px;
+  width: 94px;
+  height: 54px;
+  border: 0;
+}
+.slider {
+  width: 100%;
+  background: #fff;
+  padding-top: 30px;
+}
+footer {
+  font-family: 'Lato';
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+footer div {
+  width: 25%;
+  height: 120px;
+  border-left: 1px solid #e5e5e5;
+  margin-top: 50px;
+  padding-left: 20px;
+  line-height: 20px;
+}
+footer li {
+  text-transform: capitalize;
+  font-weight: 100;
+  font-size: 14px;
+  padding-left: 2px;
+}
+footer .social ul {
+  margin: 20px auto 0 -5px;
+}
+footer .social li {
+  width: 27px;
+  height: 27px;
+  border-radius: 0;
+  margin: 0 2px;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #606060;
+  border: 0.5px solid #606060;
+}
+footer .social li:hover {
+  color: #fff;
+  border: 0.5px solid #fff;
+  background: #606060;
+}
+#products {
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+#products div {
+  flex-wrap: wrap;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#products div .product {
+  transition: 0.3s;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dddddd;
+  background: #fff;
+  box-shadow: 0 0 0 #000;
+}
+#products div .product:hover {
+  transition: 0.5s;
+  border: 1px solid #7c7c7c78;
+  box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.363);
+}
+.description,
+.price {
+  text-transform: capitalize;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: bold;
+}
+.price {
+  font-weight: 100;
+}
+.title {
+  text-transform: uppercase;
+  padding: 40px auto;
+  font-weight: bold;
+  color: black;
+  font-size: 33px;
+  letter-spacing: 3px;
+  font-family: 'Lato';
+}
+.pdp {
+  background: #ff33 f;
+  display: flex;
+  justify-content: center;
+}
+.pdp img {
+  width: 90%;
+}
+.carousel {
+  margin: 0 auto;
+  position: relative;
+  width: 95%;
+  padding: 10px 40px;
+  background: #a3a3a3;
+}
+.carousel img {
+  width: 130px;
+  height: 130px;
+  /* по умолчанию inline, в ряде браузеров это даст лишнее пространство вокруг элементов */
+  display: block;
+}
+.arrow {
+  border: 0;
+  position: absolute;
+  height: 100%;
+  padding: 0;
+  width: 40px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+  outline: none;
+}
+.arrow:focus {
+  outline: none;
+}
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+.prev {
+  background: #e5e5e5;
+  top: 0;
+  left: 0;
+}
+.next {
+  background: #e5e5e5;
+  top: 0;
+  right: 0;
+}
+.gallery {
+  width: 100%;
+  overflow: hidden;
+}
+.gallery ul {
+  height: 130px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  /* remove white-space between inline-block'ed li */
+  /* http://davidwalsh.name/remove-whitespace-inline-block */
+  font-size: 0;
+}
+.gallery li {
+  display: inline-block;
+}

@@ -1,0 +1,73 @@
+[{
+    "id": 1,
+    "title": "Nike Alpha",
+    "description": "Bertouloume",
+    "price": 240,
+    "currency": "грн.",
+    "mainImage": "../img/products/01.jpg",
+    "images": ["../img/products/011.jpg","../img/products/0111.jpg"]
+  }, {
+    "id": 2,
+    "title": "Nike Beta",
+    "description": "Bertouloume",
+    "price": 240,
+    "currency": "грн.",
+    "mainImage": "../img/products/02.jpg",
+    "images": ["../img/products/022.jpg","../img/products/0222.jpg"]
+  }, {
+    "id": 3,
+    "title": "Nike Delta",
+    "description": "Bertouloume",
+    "price": 240,
+    "currency": "грн.",
+    "mainImage": "../img/products/03.jpg",
+    "images": ["../img/products/033.jpg","../img/products/0333.jpg"]
+  }, {
+    "id": 4,
+    "title": "Nike Gamma",
+    "description": "Bertouloume",
+    "price": 240,
+    "currency": "грн.",
+    "mainImage": "../img/products/04.jpg",
+    "images": ["../img/products/044.jpg","../img/products/0444.jpg"]
+  }, {
+    "id": 5,
+    "title": "Nike Custom",
+    "description": "Bertouloume",
+    "price": 240,
+    "currency": "грн.",
+    "mainImage": "../img/products/05.jpg",
+    "images": ["../img/products/055.jpg","../img/products/0555.jpg"]
+  }, {
+    "id": 6,
+    "title": "Nike Super",
+    "description": "Bertouloume",
+    "price": 240,
+    "currency": "грн.",
+    "mainImage": "../img/products/06.jpg",
+    "images": ["../img/products/066.jpg","../img/products/0666.jpg"]
+  }, {
+    "id": 7,
+    "title": "Nike Mega",
+    "description": "Bertouloume",
+    "price": 240,
+    "currency": "грн.",
+    "mainImage": "../img/products/07.jpg",
+    "images": ["../img/products/077.jpg","../img/products/0777.jpg"]
+  }, {
+    "id": 8,
+    "title": "Nike Awesome",
+    "description": "Bertouloume",
+    "price": 240,
+    "currency": "грн.",
+    "mainImage": "../img/products/08.jpg",
+    "images": ["../img/products/088.jpg","../img/products/0888.jpg"]
+  }, {
+    "id": 9,
+    "title": "Nike Amasing",
+    "description": "Bertouloume",
+        "price": 240,
+    "currency": "грн.",
+    "mainImage": "../img/products/09.jpg",
+    "images": ["../img/products/099.jpg","../img/products/0999.jpg"]
+}]
