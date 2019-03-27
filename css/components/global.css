@@ -2,99 +2,7 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
-}
-.heading1 {
-  font-family: 'Lato';
-  text-transform: uppercase;
-  font-size: 63px;
-}
-.heading2 {
-  font-family: 'Lato';
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-top: 27px;
-  font-size: 34px;
-  letter-spacing: 1px;
-}
-.subheader1 {
-  font-family: Georgia;
-  font-style: italic;
-  font-size: 24px;
-  color: #a3a3a3;
-  margin-top: 30px;
-}
-.subheader2 {
-  font-family: Georgia;
-  font-style: italic;
-  color: #a3a3a3;
-  margin-top: 15px;
-  font-size: 18px;
-}
-.subheader3 {
-  font-family: Georgia;
-  font-style: italic;
-  color: #a3a3a3;
-  margin-top: 15px;
-  padding: 10px;
-  font-size: 18px;
-}
-.heading3 {
-  font-family: 'Lato';
-  text-transform: uppercase;
-  color: #000;
-  font-weight: bold;
-  font-size: 14px;
-  padding-bottom: 5px;
-}
-.link {
-  font-family: 'Lato';
-  font-size: 16px;
-}
-.link:hover {
-  text-decoration: underline;
-}
-.btn1 {
-  background: #fff;
-  color: black;
-  border: 1px solid #95999b;
-  text-transform: uppercase;
-  margin: 0 auto;
-  margin-top: 70px;
-}
-.btn1:hover {
-  background: #a3a3a3;
-}
-.btn2 {
-  font-family: 'Lato';
-  color: white;
-  font-size: 14px;
-  text-transform: lowercase;
-  background: #f68236;
-  margin-left: -4px;
-  width: 94px;
-  height: 54px;
-  border: 0;
-  cursor: pointer;
-}
-.btn2:hover {
-  background: #e67429;
-}
-.lg {
-  width: 230px;
-  height: 58px;
-}
-.md {
-  width: 200px;
-  height: 55px;
-}
-.sm {
-  width: 174px;
-  height: 53px;
-}
-.spacing {
-  margin: 0 auto 30px;
-  padding: auto 30px;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
 * {
   box-sizing: border-box;
@@ -290,9 +198,6 @@ header nav .basket span {
   background: #fff;
   padding-top: 30px;
 }
-.slide:hover {
-  background: #ff0000;
-}
 footer {
   font-family: 'Lato';
   height: 100%;
@@ -391,64 +296,4 @@ footer .social li:hover {
 }
 .pdp img {
   width: 90%;
-}
-.carousel {
-  margin: 0 auto;
-  position: relative;
-  width: 95%;
-  padding: 10px 40px;
-  background: #e5e5e5;
-}
-.carousel img {
-  width: 130px;
-  height: 130px;
-  /* по умолчанию inline, в ряде браузеров это даст лишнее пространство вокруг элементов */
-  display: block;
-}
-.arrow {
-  border: 0;
-  position: absolute;
-  height: 100%;
-  padding: 0;
-  width: 40px;
-  font-size: 24px;
-  line-height: 24px;
-  color: #444;
-  display: block;
-  outline: none;
-}
-.arrow:focus {
-  outline: none;
-}
-.arrow:hover {
-  background: #ccc;
-  cursor: pointer;
-}
-.prev {
-  background: #e5e5e5;
-  top: 0;
-  left: 0;
-}
-.next {
-  background: #e5e5e5;
-  top: 0;
-  right: 0;
-}
-.gallery {
-  width: 100%;
-  overflow: hidden;
-}
-.gallery ul {
-  height: 130px;
-  width: 9999px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  transition: margin-left 250ms;
-  /* remove white-space between inline-block'ed li */
-  /* http://davidwalsh.name/remove-whitespace-inline-block */
-  font-size: 0;
-}
-.gallery li {
-  display: inline-block;
 }

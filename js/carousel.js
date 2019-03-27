@@ -13,16 +13,11 @@
         position = Math.min(position + width * count, 0)
         list.style.marginLeft = position + 'px';
         };
-    
-        if(position <= -2440){ 
-            position = 0;
-            list.style.marginLeft = position + 'px';
-        };
 
         carousel.querySelector('.next').onclick = function() { // шаг на кадр вперед при клике
-        position = Math.max(position - width * count, -width * (listElems.length - count));
+        position = position - width * count;
         list.style.marginLeft = position + 'px';
-        if(position <= -2440){
+        if(position <= -3910){
          position = 0;
          list.style.marginLeft = position + 'px';
         }
