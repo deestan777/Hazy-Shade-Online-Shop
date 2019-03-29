@@ -98,6 +98,7 @@
 }
 * {
   box-sizing: border-box;
+  transition: all 200ms;
 }
 html {
   width: 100%;
@@ -290,9 +291,6 @@ header nav .basket span {
   background: #fff;
   padding-top: 30px;
 }
-.slide:hover {
-  background: #ff0000;
-}
 footer {
   font-family: 'Lato';
   height: 100%;
@@ -344,8 +342,8 @@ footer .social li:hover {
 }
 #products div {
   flex-wrap: wrap;
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 #products div .product {
@@ -363,7 +361,7 @@ footer .social li:hover {
   box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.363);
 }
 #products div .product img {
-  margin: auto 25px;
+  margin: auto 0px;
 }
 .description,
 .price {
@@ -386,7 +384,7 @@ footer .social li:hover {
 }
 .pdp {
   background: #ff33 f;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
 }
 .pdp img {

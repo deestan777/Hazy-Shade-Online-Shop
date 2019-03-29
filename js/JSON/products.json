@@ -1,4 +1,13 @@
 [{
+    "id": 0,
+    "category" : "Men",
+    "title": "Nike Yezzy 2",
+    "description": "Bertouloume",
+    "price": 240,
+    "currency": "$",
+    "mainImage": "../img/products/0.jpg",
+    "images": ["../img/products/011.jpg","../img/products/0111.jpg"]
+  }, {
     "id": 1,
     "category" : "Men",
     "title": "Nike Alpha",
@@ -246,7 +255,7 @@
   "id": 28,
   "category" : "Coming Soon",
   "title": "Nike Back to the future",
-  "description": "Doc's gift to Mcfly",
+  "description": "Doc's gift to Marty",
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/s1.jpg",
@@ -254,47 +263,47 @@
 }, {
   "id": 29,
   "category" : "Coming Soon",
-  "title": "Nike Back to the future",
-  "description": "Doc's gift to Mcfly",
+  "title": "Robotic shoes",
+  "description": "Sync it with your smartphone",
       "price": 240,
   "currency": "$",
-  "mainImage": "../img/products/s1.jpg",
+  "mainImage": "../img/products/s2.jpg",
   "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
 }, {
   "id": 30,
   "category" : "Coming Soon",
-  "title": "Nike Back to the future",
-  "description": "Doc's gift to Mcfly",
+  "title": "Nike cyber goth",
+  "description": "Woow",
       "price": 240,
   "currency": "$",
-  "mainImage": "../img/products/s1.jpg",
+  "mainImage": "../img/products/s3.jpg",
   "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
 }, {
   "id": 31,
   "category" : "Coming Soon",
-  "title": "Nike Back to the future",
-  "description": "Doc's gift to Mcfly",
+  "title": "Nike chair edition",
+  "description": "Don't try to sit on this",
       "price": 240,
   "currency": "$",
-  "mainImage": "../img/products/s1.jpg",
+  "mainImage": "../img/products/s4.jpg",
   "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
 }, {
   "id": 32,
   "category" : "Coming Soon",
-  "title": "Nike Back to the future",
-  "description": "Doc's gift to Mcfly",
+  "title": "Nike elegant ",
+  "description": "Space trooper summer edition",
       "price": 240,
   "currency": "$",
-  "mainImage": "../img/products/s1.jpg",
+  "mainImage": "../img/products/s5.jpg",
   "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
 }, {
   "id": 33,
   "category" : "Coming Soon",
-  "title": "Nike Back to the future",
-  "description": "Doc's gift to Mcfly",
+  "title": "Nike Bender",
+  "description": "Bend it all!",
       "price": 240,
   "currency": "$",
-  "mainImage": "../img/products/s1.jpg",
+  "mainImage": "../img/products/s6.jpg",
   "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
 }, {
   "id": 34,
@@ -303,7 +312,7 @@
   "description": "Doc's gift to Mcfly",
       "price": 240,
   "currency": "$",
-  "mainImage": "../img/products/s1.jpg",
+  "mainImage": "../img/products/s7.jpg",
   "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
 }, {
   "id": 35,
@@ -312,7 +321,7 @@
   "description": "Doc's gift to Mcfly",
       "price": 240,
   "currency": "$",
-  "mainImage": "../img/products/s1.jpg",
+  "mainImage": "../img/products/s8.jpg",
   "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
 }, {
   "id": 36,
@@ -321,6 +330,6 @@
   "description": "Doc's gift to Mcfly",
       "price": 240,
   "currency": "$",
-  "mainImage": "../img/products/s1.jpg",
+  "mainImage": "../img/products/s9.jpg",
   "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
 }]
