@@ -6,7 +6,8 @@
     "price": 240,
     "currency": "$",
     "mainImage": "../img/products/0.jpg",
-    "images": ["../img/products/011.jpg","../img/products/0111.jpg"]
+    "images": ["../img/products/011.jpg","../img/products/0111.jpg"],
+    "size": [36,37,38,39,40]
   }, {
     "id": 1,
     "category" : "Men",
@@ -15,7 +16,8 @@
     "price": 240,
     "currency": "$",
     "mainImage": "../img/products/01.jpg",
-    "images": ["../img/products/011.jpg","../img/products/0111.jpg"]
+    "images": ["../img/products/011.jpg","../img/products/0111.jpg"],
+    "size": [36,37,38,39,40]
   }, {
     "id": 2,
     "category" : "Men",
@@ -24,7 +26,8 @@
     "price": 240,
     "currency": "$",
     "mainImage": "../img/products/02.jpg",
-    "images": ["../img/products/022.jpg","../img/products/0222.jpg"]
+    "images": ["../img/products/022.jpg","../img/products/0222.jpg"],
+    "size": [36,37,38,39,40]
   }, {
     "id": 3,
     "category" : "Men",
@@ -33,7 +36,8 @@
     "price": 240,
     "currency": "$",
     "mainImage": "../img/products/03.jpg",
-    "images": ["../img/products/033.jpg","../img/products/0333.jpg"]
+    "images": ["../img/products/033.jpg","../img/products/0333.jpg"],
+    "size": [36,37,38,39,40]
   }, {
     "id": 4,
     "category" : "Men",
@@ -42,7 +46,8 @@
     "price": 240,
     "currency": "$",
     "mainImage": "../img/products/04.jpg",
-    "images": ["../img/products/044.jpg","../img/products/0444.jpg"]
+    "images": ["../img/products/044.jpg","../img/products/0444.jpg"],
+    "size": [36,37,38,39,40]
   }, {
     "id": 5,
     "category" : "Men",
@@ -51,7 +56,8 @@
     "price": 240,
     "currency": "$",
     "mainImage": "../img/products/05.jpg",
-    "images": ["../img/products/055.jpg","../img/products/0555.jpg"]
+    "images": ["../img/products/055.jpg","../img/products/0555.jpg"],
+    "size": [36,37,38,39,40]
   }, {
     "id": 6,
     "category" : "Men",
@@ -60,7 +66,8 @@
     "price": 240,
     "currency": "$",
     "mainImage": "../img/products/06.jpg",
-    "images": ["../img/products/066.jpg","../img/products/0666.jpg"]
+    "images": ["../img/products/066.jpg","../img/products/0666.jpg"],
+    "size": [36,37,38,39,40]
   }, {
     "id": 7,
     "category" : "Men",
@@ -69,7 +76,8 @@
     "price": 240,
     "currency": "$",
     "mainImage": "../img/products/07.jpg",
-    "images": ["../img/products/077.jpg","../img/products/0777.jpg"]
+    "images": ["../img/products/077.jpg","../img/products/0777.jpg"],
+    "size": [36,37,38,39,40]
   }, {
     "id": 8,
     "category" : "Men",
@@ -78,7 +86,8 @@
     "price": 240,
     "currency": "$",
     "mainImage": "../img/products/08.jpg",
-    "images": ["../img/products/088.jpg","../img/products/0888.jpg"]
+    "images": ["../img/products/088.jpg","../img/products/0888.jpg"],
+    "size": [36,37,38,39,40]
   }, {
     "id": 9,
     "category" : "Men",
@@ -87,7 +96,8 @@
         "price": 240,
     "currency": "$",
     "mainImage": "../img/products/09.jpg",
-    "images": ["../img/products/099.jpg","../img/products/0999.jpg"]
+    "images": ["../img/products/099.jpg","../img/products/0999.jpg"],
+    "size": [36,37,38,39,40]
 }, {
     "id": 10,
     "category" : "Woman",
@@ -96,7 +106,8 @@
         "price": 240,
     "currency": "$",
     "mainImage": "../img/products/g1.jpg",
-    "images": ["../img/products/g11.jpg","../img/products/g111.jpg"]
+    "images": ["../img/products/g11.jpg","../img/products/g111.jpg"],
+    "size": [36,37,38,39,40]
 }, {
   "id": 11,
   "category" : "Woman",
@@ -105,7 +116,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/g2.jpg",
-  "images": ["../img/products/g22.jpg","../img/products/g222.jpg"]
+  "images": ["../img/products/g22.jpg","../img/products/g222.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 12,
   "category" : "Woman",
@@ -114,7 +126,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/g3.jpg",
-  "images": ["../img/products/g33.jpg","../img/products/g333.jpg"]
+  "images": ["../img/products/g33.jpg","../img/products/g333.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 13,
   "category" : "Woman",
@@ -123,7 +136,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/g4.jpg",
-  "images": ["../img/products/g44.jpg","../img/products/g444.jpg"]
+  "images": ["../img/products/g44.jpg","../img/products/g444.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 14,
   "category" : "Woman",
@@ -132,7 +146,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/g5.jpg",
-  "images": ["../img/products/g55.jpg","../img/products/g555.jpg"]
+  "images": ["../img/products/g55.jpg","../img/products/g555.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 15,
   "category" : "Woman",
@@ -141,7 +156,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/g6.jpg",
-  "images": ["../img/products/g66.jpg","../img/products/g666.jpg"]
+  "images": ["../img/products/g66.jpg","../img/products/g666.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 16,
   "category" : "Woman",
@@ -150,7 +166,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/g7.jpg",
-  "images": ["../img/products/g77.jpg","../img/products/g777.jpg"]
+  "images": ["../img/products/g77.jpg","../img/products/g777.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 17,
   "category" : "Woman",
@@ -159,7 +176,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/g8.jpg",
-  "images": ["../img/products/g88.jpg","../img/products/g888.jpg"]
+  "images": ["../img/products/g88.jpg","../img/products/g888.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 18,
   "category" : "Woman",
@@ -168,7 +186,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/g9.jpg",
-  "images": ["../img/products/g99.jpg","../img/products/g999.jpg"]
+  "images": ["../img/products/g99.jpg","../img/products/g999.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 19,
   "category" : "Kids",
@@ -177,7 +196,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/k1.jpg",
-  "images": ["../img/products/k11.jpg","../img/products/k111.jpg"]
+  "images": ["../img/products/k11.jpg","../img/products/k111.jpg"],
+  "size": [36,37,38,39,40]
 }
 , {
   "id": 20,
@@ -187,7 +207,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/k2.jpg",
-  "images": ["../img/products/k22.jpg","../img/products/k222.jpg"]
+  "images": ["../img/products/k22.jpg","../img/products/k222.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 21,
   "category" : "Kids",
@@ -196,7 +217,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/k3.jpg",
-  "images": ["../img/products/k33.jpg","../img/products/k333.jpg"]
+  "images": ["../img/products/k33.jpg","../img/products/k333.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 22,
   "category" : "Kids",
@@ -205,16 +227,18 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/k4.jpg",
-  "images": ["../img/products/k44.jpg","../img/products/k444.jpg"]
+  "images": ["../img/products/k44.jpg","../img/products/k444.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 23,
   "category" : "Kids",
   "title": "Nike Rugrats",
   "description": "Bertouloume",
-      "price": 240,
+  "price": 240,
   "currency": "$",
   "mainImage": "../img/products/k5.jpg",
-  "images": ["../img/products/k55.jpg","../img/products/k555.jpg"]
+  "images": ["../img/products/k55.jpg","../img/products/k555.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 24,
   "category" : "Kids",
@@ -223,7 +247,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/k6.jpg",
-  "images": ["../img/products/k66.jpg","../img/products/k666.jpg"]
+  "images": ["../img/products/k66.jpg","../img/products/k666.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 25,
   "category" : "Kids",
@@ -232,7 +257,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/k7.jpg",
-  "images": ["../img/products/k77.jpg","../img/products/k777.jpg"]
+  "images": ["../img/products/k77.jpg","../img/products/k777.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 26,
   "category" : "Kids",
@@ -241,7 +267,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/k8.jpg",
-  "images": ["../img/products/k88.jpg","../img/products/k888.jpg"]
+  "images": ["../img/products/k88.jpg","../img/products/k888.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 27,
   "category" : "Kids",
@@ -250,7 +277,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/k9.jpg",
-  "images": ["../img/products/k99.jpg","../img/products/k999.jpg"]
+  "images": ["../img/products/k99.jpg","../img/products/k999.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 28,
   "category" : "Coming Soon",
@@ -259,7 +287,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/s1.jpg",
-  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
+  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 29,
   "category" : "Coming Soon",
@@ -268,7 +297,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/s2.jpg",
-  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
+  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 30,
   "category" : "Coming Soon",
@@ -277,7 +307,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/s3.jpg",
-  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
+  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 31,
   "category" : "Coming Soon",
@@ -286,7 +317,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/s4.jpg",
-  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
+  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 32,
   "category" : "Coming Soon",
@@ -295,7 +327,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/s5.jpg",
-  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
+  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 33,
   "category" : "Coming Soon",
@@ -304,7 +337,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/s6.jpg",
-  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
+  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 34,
   "category" : "Coming Soon",
@@ -313,7 +347,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/s7.jpg",
-  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
+  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 35,
   "category" : "Coming Soon",
@@ -322,7 +357,8 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/s8.jpg",
-  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
+  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"],
+  "size": [36,37,38,39,40]
 }, {
   "id": 36,
   "category" : "Coming Soon",
@@ -331,5 +367,6 @@
       "price": 240,
   "currency": "$",
   "mainImage": "../img/products/s9.jpg",
-  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"]
+  "images": ["../img/products/s11.jpg","../img/products/s111.jpg"],
+  "size": [36,37,38,39,40]
 }]

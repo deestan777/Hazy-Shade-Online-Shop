@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@main-font: 'Lato', sans-serif;
+@second-font: Georgia, 'Times New Roman', Times, serif;
+@accent1:#e67429;
+@accent2:#f68236;
+@grey1:#303030;
+@grey2:#606060;
+@grey3:#a3a3a3;
+@grey4:#e5e5e5;
+
+.heading1{
+    font-family: @main-font;
+    text-transform: uppercase;
+    font-size: 63px;
+}
+.heading2{
+    font-family: @main-font;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 27px;
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+.subheader1{
+    font-family: @second-font;
+    font-style: italic;
+    font-size:24px;
+    color:@grey3;
+    margin-top: 30px;
+}
+.subheader2{
+    font-family: @second-font;
+    font-style: italic;
+    color:@grey3;
+    margin-top: 15px;
+    font-size:18px;
+}
+.subheader3{
+    font-family: @second-font;
+    font-style: italic;
+    color:@grey3;
+    margin-top: 15px;
+    padding:10px;
+    font-size:18px;
+}
+.heading3{
+    font-family: @main-font;
+    text-transform: uppercase;
+    color:#000;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.link{
+    font-family: @main-font;
+    font-size: 16px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.btn1{
+    background: #fff;
+    color: black;
+    border: 1px solid #95999b;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-top: 70px;
+    &:hover{
+        background: @grey3;
+    }
+}
+
+.btn2{
+    font-family: @main-font;
+    color: white;
+    font-size: 14px;
+    text-transform: lowercase;
+    background: @accent2;
+    margin-left: -4px;
+    width: 94px;
+    height: 54px;
+    border: 0;
+    cursor: pointer;
+    &:hover{
+        background: @accent1;
+    }
+}
+
+.lg{
+    width:230px;
+    height:58px;
+}
+.md{
+    width:200px;
+    height:55px;
+}
+.sm{
+    width:174px;
+    height:53px;
+}
+
+.spacing{
+    margin:0 auto 30px;
+    padding:auto 30px;
+}

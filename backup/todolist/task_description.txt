@@ -1,0 +1,66 @@
+TASK SYNOPSIS:
+  This FINAL INDIVIDUAL task combines all your knowledge and skills.
+  Every student will defend it to teacher personally.
+
+
+INTRO:
+  minimalistic e-commerce website
+  static HTML files
+  responsive layout with RWD techniques (media queries)
+  some basic JS (you may also use utility libraries)
+
+
+IMPORTANT: 
+  (1) screenshots - first! Your primary source of layout are >> screenshots << . 
+  Each page has multiple screenshots for various window width. You should reflect those changes of layout in your work.
+  (2) PSD files are secondary, as they were adapted to simplify some aspects. use them just for reference (font properties, pick colors).
+
+
+PAGES TO MAKE:
+  - index (Homepage)
+  - category-all (Category Listing)
+  - pdp (Product Detail Page)
+  - shop-cart (Shopping Cart)
+  - thank-you (when user finishes order)
+
+
+TOOLS:
+  - Chrome DevTools
+  - Pixel Perfect (Chrome plugin)
+  - Photoshop
+
+
+BROWSER SUPPORT:
+  - Chrome
+  - Firefox
+  - IE
+  (all latest versions)
+
+
+You received task with some assets within the following folder structure.
+STRUCTURE:
+   - css/
+   - fonts/
+   - img/
+   - js/
+     |- common/
+        |- jquery.js
+        |- ... .js
+     |- index.js
+     |- ... .js
+   - category-all.html
+   - index.html
+   - ... .html
+
+
+BONUS:
+  * Product detail page (PDP) 
+       - implement switcher for thumbnails (small photo previews), 
+       - selecting products.
+  * Shop Cart 
+       - implement shop bag functionality with JS (adding, calculating total amount, deleting etc.).
+       You can create and use your own stub/mock data 
+       - can save information (so it persists, when navigating between pages)
+
+
+

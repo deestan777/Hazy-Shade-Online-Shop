@@ -51,12 +51,46 @@ xhr.onreadystatechange = function(){
     }
     if(location.pathname=='/html/pdp.html'){
         productItem = `
-    <div>
-    <img src="${products[idKey].mainImage}" width="50%" /> 
-    <h2 class="heading3">${products[idKey].title}</h2> 
-    <h3 class="subheader2">${products[idKey].description}</h3>
-    <h3 class="subheader3">${products[idKey].price} ${products[idKey].currency}</h3> 
-    <button href="" class="btn2 spacing" id="add">Add</button> 
+    <div class="product-pics">
+    <img class="main-image" src="${products[idKey].mainImage}" />
+    <ul>
+    <li><img class="secondary-image" src="${products[idKey].mainImage}" /></li>
+    <li><img class="secondary-image" src="${products[idKey].images[0]}" /></li>
+    <li><img class="secondary-image" src="${products[idKey].images[1]}" /></li>
+    </ul>
+    </div>
+    <div class="title-description">
+    <h2 class="heading2">${products[idKey].title}</h2> 
+    <h3 class="subheader1">${products[idKey].description}</h3>
+    <h3 class="heading2 pricepdp">${products[idKey].price} ${products[idKey].currency}</h3>
+    <h3 class="subheader2">
+
+
+    <label class="container">${products[idKey].size[0]}
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">${products[idKey].size[1]}
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">${products[idKey].size[2]}
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">${products[idKey].size[3]}
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">${products[idKey].size[4]}
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+
+
+    
+    </h3>  
+    <button href="" class="btn2 spacing lg" id="add">ADD TO CART</button> 
     </div>
     `;
         pdp.innerHTML += productItem;

@@ -5,30 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hazy Shade</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/app.css">
 </head>
 <body>
+ 
 <header>
 <nav>
-    <a href="index.html">
+    <a href="../index.html" >
         <div class="logo">
             <h1 class="logo_title">sh</h1>
         </div>
     </a>
     <div class="links">
         <ul>
-            <a href="/category-all.html">
+            <a href="./category-all.html" class="link" onclick="getdata()">
                 <li>Woman</li>
             </a>
-            <a href="category-all.html">
+            <a href="./category-all.html" class="link" onclick="getdata()">
                 <li>Men</li>
             </a>
-            <a href="category-all.html">
+            <a href="./category-all.html" class="link" onclick="getdata()">
                 <li>Kids</li>
             </a>
-            <a href="category-all.html">
+            <a href="./category-all.html" class="link" onclick="getdata()">
                 <li>Coming Soon</li>
             </a>
         </ul>
@@ -36,125 +40,89 @@
     <div class="search">
         <i class="fas fa-search"></i>
     </div>
-    <a href="basket.html">
+    <a href="./html/basket.html">
         <div class="basket">
             <i class="fas fa-shopping-bag"></i><span>Basket(0)</span>
         </div>
     </a>
 </nav>
 </header>
+<section id="products">
 
-<section class="jumbotron">
-    <h1>hazy shade of spring</h1>
-    <h2>Quisque lorem tortor fringilla sed, vestibulum is, eleifend justo.</h2>
-    <button>check new arrivals</button>
-</section>
-
-<section class="pic-greed">
-    <div class="row">
-
-        <div class="pic pic-1">
-                <h2>elegant<br>shoes</h2>
-                <h3>braided leather</h3>
-        </div>
-
-        <div class="pic pic-2">
-
-        </div>
-
-        <div class="pic pic-3">
-                <h2>elegant<br>shoes</h2>
-                <h3>braided leather</h3>
-        </div>
-
-        <div class="pic pic-4">
-      
-        </div>
-
-    </div>
-    <div class="row">
-        <div class="pic pic-5">
-   
-        </div>
-        <div class="pic pic-6">
-                <h2>elegant<br>shoes</h2>
-                <h3>braided leather</h3>
-        </div>
-        <div class="pic pic-7">
-         
-        </div>
-        <div class="pic pic-8">
-                <h2>elegant<br>shoes</h2>
-                <h3>braided leather</h3>
-        </div>
-    </div>
-   
-</section>
-<section class="subscribe-form">
-    <h1>sign up to receive our updates</h1>
-    <h2>Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat</h2>
-        <form action="">
-            <span class="email-form">
-            <input type="text" name="email" placeholder="Your e-mail">
-            </span>
-            <span class="submit">
-                <input type="submit" value="add">
-            </span>
-        </form>
 </section>
 <section class="slider">
-    <div class="carousel">
-        <div class="previous">
-                <i class="fas fa-arrow-left"></i>
+<div id="carousel" class="carousel">
+        <button class="arrow prev">⇦</button>
+        <div class="gallery">
+          <ul class="images">
+            
+          </ul>
         </div>
-        <div class="slides">
-        <div class="slide">1</div>
-        <div class="slide">1</div>
-        <div class="slide">1</div>
-        <div class="slide">1</div>
-        <div class="slide">1</div>
-        
-        </div>
-        <div class="next">
-                <i class="fas fa-arrow-right"></i>
-        </div>
-    </div>
+        <button class="arrow next">⇨</button>
+      </div>
 </section>
+
 <footer>
 
-<div class="collection">
-    <h3>collection</h3>
-    <ul>
-        <li>woman</li>
-        <li>men</li>
-        <li>kids</li>
-        <li>coming soon</li>
-    </ul>
-</div>
+        <div class="collection">
+                <h3 class="heading3">collection</h3>
+                <ul>
+                    <a href="../html/category-all.html" class="link">
+                    <li>woman</li>
+                </a>
+                <a href="../html/category-all.html" class="link">
+                    <li>men</li>
+                </a>
+                <a href="../html/category-all.html" class="link">
+                    <li>kids</li>
+                </a>
+                <a href="../html/category-all.html" class="link">
+                    <li>coming soon</li>
+                </a>
+                </ul>
+            </div>
 
 <div class="site">
-    <h3>site</h3>
+    <h3 class="heading3">site</h3>
     <ul>
+    <a href="" class="link">
         <li>terms of service</li>
+    </a>
+    <a href="" class="link"> 
         <li>privacy policy</li>
+    </a>
+    <a href="" class="link">
         <li>copyright policy</li>
+    </a>
+    <a href="" class="link">
         <li>press kit</li>
+    </a>
+    <a href="" class="link">
         <li>support</li>
+    </a>
     </ul>
 </div>
 
 <div class="shop">
-    <h3>shop</h3>
+    <h3  class="heading3">shop</h3>
     <ul>
+        <a href="" class="link">
         <li>about us</li>
+    </a>
+    <a href="" class="link">
         <li>shipping methods</li>
+    </a>
+    <a href="" class="link">
         <li>career</li>
+    </a>
+    <a href="" class="link">
         <li>contact</li>
+    </a>
     </ul>
 </div>
 
 <div class="social">
-    <h3>social</h3>
+    <h3  class="heading3">social</h3>
     <p>Shoper os made with love in Kiev.</p>
     <p>2014 &copy All rights ignored. El Stason</p>
     <ul>
@@ -165,7 +133,7 @@
     </ul>
 </div>
 </footer>
-<script src="js/main.js"></script> 
-</header>   
+<script src="../js/carousel.js"></script> 
+<script src="../js/category.js"></script> 
 </body>
 </html>
