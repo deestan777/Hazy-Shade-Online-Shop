@@ -1,0 +1,113 @@
+#cart {
+    background: #ffffff;
+    text-align: center;
+
+    table {
+    width: 95%; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    border: 2px solid white; /* Прячем рамку вокруг таблицы */
+    margin: 0 auto;
+    margin-top: 100px;
+    padding:40px 0;
+    min-width: 340px;
+    font-family: @main-font;
+    }
+    thead{
+        
+        th{
+        text-transform: uppercase;
+        font-weight: 100;
+        }
+    }
+
+tbody{
+    border-bottom:1px solid @grey4;
+    border-top:1px solid @grey4;
+
+}
+
+    tfoot{
+        background: rgb(233, 233, 233);
+        th {
+            text-align: center;
+           }
+ 
+        tr {
+            height:7vh;
+        }
+    }
+    td, th {
+    max-height: 120px;
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 0;
+    text-align: left; /* Выравнивание по левому краю */
+    vertical-align: middle;
+    img {
+        vertical-align: baseline;
+        margin: 0 auto;
+        height:120px;
+        height:120px;
+        border:1px solid @grey4;
+        }
+    }
+    th {
+    color:@grey2;
+    text-transform: capitalize;
+    }
+    .picture{
+        width:130px;
+    }
+    .title-tab,
+    .amount-tab,
+    .delete-tab {
+        text-align: center;
+    }
+
+    .color-tab,
+    .size-tab,
+    .qty-tab{
+        text-align: left;
+    }
+    
+    .qty-tab{
+        input{
+            text-align: center;
+            outline-offset: none;
+            outline: none;
+            font-family: @main-font;
+            border:0;
+        }
+
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button {  
+    
+            opacity: 1;
+            font-size:20px;
+            transform: translateX(0px);
+        }
+    }
+    .amount-tab{
+        letter-spacing: 2px;
+    }
+
+    .delete-tab{
+        color: @grey2;
+        font-weight: bolder;
+        text-transform: lowercase;
+        cursor: pointer;
+        &:hover{
+            
+          transform: translateX(-20px);
+          
+        }
+    }
+}
+
+.cart-button {
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    width:100%;
+    margin:0 auto;
+    background:#ffffff;
+  }

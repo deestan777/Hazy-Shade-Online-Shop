@@ -1,4 +1,3 @@
-var idKey = location.search.slice(1);
 var xhr = new XMLHttpRequest(); // создаем XML функцию
 var products;
 var product = document.createElement('div');
@@ -6,8 +5,6 @@ var productsAll = document.getElementById('products');
 var pdp = document.getElementById('pdp');
 var slideWrapper = document.querySelector('.images'); 
 var categoryLinks = document.querySelector('.links');
-var addProduct = document.getElementById('add');
-var idKey = location.search.slice(1);
 var productItem;
 
 
@@ -47,52 +44,57 @@ xhr.onreadystatechange = function(){
             } 
         }
         slideWrapper.innerHTML +=`<a class="slide" href="../html/pdp.html?${products[i].id}"><li><img src="${products[i].mainImage}"></li></a>`;
-        
     }
     if(location.pathname=='/html/pdp.html'){
-        productItem = `
-    <div class="product-pics">
-    <img class="main-image" src="${products[idKey].mainImage}" />
-    <ul>
-    <li><img class="secondary-image" src="${products[idKey].mainImage}" /></li>
-    <li><img class="secondary-image" src="${products[idKey].images[0]}" /></li>
-    <li><img class="secondary-image" src="${products[idKey].images[1]}" /></li>
-    </ul>
-    </div>
-    <div class="title-description">
-    <h2 class="heading2">${products[idKey].title}</h2> 
-    <h3 class="subheader1">${products[idKey].description}</h3>
-    <h3 class="heading2 pricepdp">${products[idKey].price} ${products[idKey].currency}</h3>
-    <h3 class="subheader2">
+      productItem = `
+  <div class="product-pics">
+  <img class="main-image" src="${products[idKey].mainImage}" />
+  <ul>
+  <li><img class="secondary-image" src="${products[idKey].mainImage}" /></li>
+  <li><img class="secondary-image" src="${products[idKey].images[0]}" /></li>
+  <li><img class="secondary-image" src="${products[idKey].images[1]}" /></li>
+  </ul>
+  </div>
+  <div class="title-description">
+  <h2 class="heading2">${products[idKey].title}</h2> 
+  <h3 class="subheader1">${products[idKey].description}</h3>
+  <h3 class="heading2 pricepdp">${products[idKey].price} ${products[idKey].currency}</h3>
+  <h3 class="subheader2">
 
 
-    <label class="container">${products[idKey].size[0]}
+
+
+  
+
+  
+  <label class="container">${products[idKey].size[0]}
   <input type="radio" checked="checked" name="radio">
   <span class="checkmark"></span>
-</label>
-<label class="container">${products[idKey].size[1]}
+  </label>
+  <label class="container">${products[idKey].size[1]}
   <input type="radio" name="radio">
   <span class="checkmark"></span>
-</label>
-<label class="container">${products[idKey].size[2]}
+  </label>
+  <label class="container">${products[idKey].size[2]}
   <input type="radio" name="radio">
   <span class="checkmark"></span>
-</label>
-<label class="container">${products[idKey].size[3]}
+  </label>
+  <label class="container">${products[idKey].size[3]}
   <input type="radio" name="radio">
   <span class="checkmark"></span>
-</label>
-<label class="container">${products[idKey].size[4]}
+  </label>
+  <label class="container">${products[idKey].size[4]}
   <input type="radio" name="radio">
   <span class="checkmark"></span>
-</label>
+  </label>
+  
+
+  
+  </h3>  
+  </div>
+  `;
+      pdp.innerHTML += productItem;
 
 
-    
-    </h3>  
-    <button href="" class="btn2 spacing lg" id="add">ADD TO CART</button> 
-    </div>
-    `;
-        pdp.innerHTML += productItem;
-    }
-}
+  }  
+  } 

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
-@main-font: 'Lato', sans-serif;
+@main-font: 'Lato';
 @second-font: Georgia, 'Times New Roman', Times, serif;
 @accent1:#e67429;
 @accent2:#f68236;
@@ -43,13 +43,25 @@
     padding:10px;
     font-size:18px;
 }
-.heading3{
+.heading3,
+.tabs-heading {
     font-family: @main-font;
     text-transform: uppercase;
     color:#000;
     font-weight: bold;
     font-size: 14px;
     padding-bottom: 5px;
+}
+
+
+.tabs-heading{
+padding-bottom:0;
+line-height: 100%;
+float: right;
+}
+.tabs-total{
+    font-weight: 900;
+    color:@accent2;
 }
 
 .link{
@@ -101,9 +113,25 @@
     height:53px;
 }
 
+.sm-font{
+    font-family: @second-font;
+    line-height: 12px;
+    font-size: 15px;
+    color:@grey2;
+    text-transform: lowercase;
+}
+
 .spacing{
     margin:30px auto;
     padding:auto 30px;
+}
+
+.hidden{
+    display: none;
+}
+
+.padding{
+    padding: 20px auto;
 }
 
 .pricepdp{
@@ -111,3 +139,4 @@
     color:@grey3;
     font-weight: 100;
 }
+

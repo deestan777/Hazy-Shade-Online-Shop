@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+             <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hazy Shade</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
 </head>
 <body>
  
-<header>
+            <header>
 <nav>
     <a href="../index.html" >
         <div class="logo">
@@ -28,7 +28,7 @@
             </a>
             <a href="./category-all.html" class="link" onclick="getdata()">
                 <li>Men</li>
-            </a>
+             </a>
             <a href="./category-all.html" class="link" onclick="getdata()">
                 <li>Kids</li>
             </a>
@@ -47,7 +47,72 @@
     </a>
 </nav>
 </header>
-<section id="products">
+<section id="cart">
+        <h1 class="heading1">your shopping bag</h1>
+        <h2 class="subheader1">Items reserved for limited time only</h2>
+<table id="cart-items">
+    <thead>
+        <th>product</th>
+        <th>description</th>
+        <th>color</th>
+        <th>size</th>
+        <th>qty</th>
+        <th>amount</th>
+        <th>delete</th>
+    </thead>
+    <tbody id="cart-space">
+
+        <tr id="cart-item-tab" class="hidden">
+            <td class="picture">
+                <img src="" alt="">
+            </td> 
+            <td class="title-tab">
+                <h4 class="heading3"></h4> 
+                <h3 class="sm-font"></h3>
+            </td>
+            <td class="color-tab"></td>
+            <td class="size-tab"></td>
+            <td class="qty-tab">
+                <form action="/action_page.php">
+                     <input type="number" name="quantity" placeholder="1" step="1" min="1" max="99">
+                 </form>
+            </td>
+            <td class="amount-tab"></td>
+            <td class="delete-tab" onclick=""><i class="fas fa-backspace"></i></td>
+        </tr>
+
+
+<tr id="cart-item-tab" class="hidden">
+        <td class="picture"><img src="../img/products/s1.jpg" alt=""></td> 
+        <td class="title-tab">
+        <h4 class="heading3">floral plimsoll</h4> 
+        <h3 class="sm-font">Ref: 2514/302</h3>
+        </td>
+        <td class="color-tab">Black</td>
+        <td class="size-tab">39</td>
+        <td class="qty-tab">
+            <form action="/action_page.php">
+                 <input type="number" name="quantity" placeholder="1" step="1" min="1" max="99">
+             </form>
+        </td>
+        <td class="amount-tab">240 $</td>
+        <td class="delete-tab" onclick=""><i class="fas fa-backspace"></i></td>
+    </tr>
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="5"><p class="tabs-heading">Subtotal&nbsp:</p></th>
+            <th><p class="tabs-total">0 $</p> </th>
+            <th></th> 
+        </tr>
+    </tfoot>
+</table>
+
+    <a href="/html/category-all.html" class="link" id="continue-shopping">Continue Shopping</a>&nbsp;
+<form method="GET" action="/html/thanks.html">
+    <button href="" onClick="localStorage.clear();" class="btn2 lg spacing" id="order-now">ORDER NOW</button>
+</form>
 
 </section>
 <section class="slider">
@@ -133,7 +198,9 @@
     </ul>
 </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="../js/carousel.js"></script> 
 <script src="../js/category.js"></script> 
+<script src="../js/cart.js"></script> 
 </body>
 </html>

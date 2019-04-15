@@ -1,0 +1,119 @@
+//HEADER 
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    margin: auto auto;
+    height: 16.5vh;
+    nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            margin-top: -10px;
+            margin-left: 29px;
+            margin-right: 34px;
+            color: white;
+            background: #000;
+            width: 35px;
+            height: 40px;
+            font-family: @main-font;
+            font-weight: bold;
+          }
+          .links {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: -8px;
+            font-size: 15px;
+            width: 73.8%;
+            li {
+                display: inline;
+              }
+              a {
+                text-decoration: none;
+                color: black;
+                margin-right: 30px;
+                font-family: @main-font;
+                font-size:16px;
+              }
+          }
+          .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            width: 35px;
+            height: 35px;
+          }
+          .basket {
+            margin-top: -5px;
+            margin-left: 25px;
+              i {
+                font-size: 20px;
+              }
+              span {
+                font-family: @main-font;
+                font-size: 15px;
+                margin-left: 2px;
+              }
+          }
+        
+      }
+  }
+
+
+   
+
+
+footer {
+font-family: @main-font;
+height: 100%;
+background: #fff;
+display: flex;
+justify-content: space-around;
+padding-bottom: 100px;
+      div {
+        width: 25%;
+        height: 120px;
+        border-left: 1px solid #e5e5e5;
+        margin-top: 50px;
+        padding-left: 20px;
+        line-height: 20px;
+    }
+      li {
+        text-transform: capitalize;
+        font-weight: 100;
+        font-size: 14px;
+        padding-left: 2px;
+    }
+      .social {
+        ul {
+        margin: 20px auto 0 -5px;
+        }
+        li {
+        width:27px;
+        height:27px;
+        border-radius: 0;
+        margin: 0 2px;
+        font-size: 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        color: #606060;
+        border: 0.5px solid #606060;
+        &:hover{
+        color: #fff;
+        border: 0.5px solid #fff;
+        background:#606060;  
+
+        }
+        }
+    }    
+}

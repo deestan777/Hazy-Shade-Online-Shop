@@ -1,58 +1,61 @@
-    var item = {
-    id: 1,
-    size: 43
-    };
-
-    var itemsInCart = JSON.parse(localstorage.getItem('cart-items')) || [];
-    itemsInCart.push(item);
-    
-    localstorage.setItem('cart-item', JSON.stringify(itemsInCart));
-    
-    
-    function renderShoppingCart(){ // взять товары с ЛС и нарисовать
-    var itemsInCart = JSON.parse(localstorage.getItem('cart-items'));
-    var cartContainer = document.querySelector('app');
-    
-    var itemsHTML =' ';
-    
-    itemsInCart.forEach(function(item){
-    var itemData = findItemInJSON(item.id);
-    itemsHTML += `<div>
-    <h2>${itemData.title}</h2>
-    <h2>${itemData.price}</h2>
-    </div>`;
-    
-    });
-    
-    cartContainer.innerHTML = itemHTML;
-    }
-    
-    renderShoppingCart();
-    
-    
-    var jsonData = [{
-    id: 1,
-    title: 'some item',
-    price: 56,
-    },{
-    id: 21,
-    title: 'some item',
-    price: 5446
-    }]
-    
-    function findItemInJSON(id){
-    var itemData = jsonData.filter(function(item){
-    return item.id == id;
-    });
-    return itemData[0];
-    }
+var item = jQuery.parseJSON(localStorage['items-in-cart']);
+var cartSpace = document.getElementById('cart-space');
+var cartHTML = [];
+var removeBtn = document.getElementById('item-id${product.id}');
+var subTotal = 0;
+var subTotalHtml = document.querySelector('.tabs-total');
+var itemsInCart = JSON.parse(localStorage.getItem('cart-items')) || [];
+itemsInCart.push(item);
 
 
-    itemsInCart.forEach(function(item){
-        var itemData = findItemInJSON(item.id);
-        itemsHTML += `<div>
-        <h2>${itemData.title}</h2>
-        <h2>${itemData.price}</h2>
-        </div>`;
-        
-        });
+    
+    localStorage.setItem('cart-items', JSON.stringify(itemsInCart));
+    
+    var jqxhr = $.getJSON( "../js/JSON/products.json", function() {
+        console.log( "success" );
+
+        for(var i = 0; i < itemsInCart.length; i++){
+          var product = itemsInCart[i][0];
+         
+          subTotal += product.price;
+         
+          cartHTML +=`
+
+          <tr id="item-id${product.id}">
+                <td class="picture">
+                <img src="${product.mainImage}" alt="">
+                </td> 
+                <td class="title-tab">
+                <h4 class="heading3">${product.title}</h4> 
+                <h3 class="sm-font">${product.description}</h3>
+                </td>
+                <td class="color-tab">${product.category}</td>
+                <td class="size-tab">${product.size[0]}</td>
+                <td class="qty-tab">
+                <form action="/action_page.php">
+                <input type="number" name="quantity" placeholder="1" step="1" min="1" max="99">
+                </form>
+                </td>
+                <td class="amount-tab">${product.price}</td>
+                <td class="delete-tab" onclick="document.remove('item-id${product.id}')"><i class="fas fa-backspace"></i></td>
+          </tr>`;        
+
+/*
+          if(product.id == JSON.parse(localStorage['cart-items'])[i][0].id localStorage['cart-items'] itemsInCart[i][0].id){
+            return;
+          } else {} */
+
+
+          cartSpace.innerHTML = cartHTML;
+          subTotalHtml.innerText = subTotal + " $";
+        }
+      })
+.done(function() {
+  console.log( "second success" );
+})
+.fail(function() {
+  console.log( "error" );
+})
+.always(function() {
+  console.log( "complete" );
+});

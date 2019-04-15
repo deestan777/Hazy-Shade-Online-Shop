@@ -39,13 +39,23 @@
   padding: 10px;
   font-size: 18px;
 }
-.heading3 {
+.heading3,
+.tabs-heading {
   font-family: 'Lato';
   text-transform: uppercase;
   color: #000;
   font-weight: bold;
   font-size: 14px;
   padding-bottom: 5px;
+}
+.tabs-heading {
+  padding-bottom: 0;
+  line-height: 100%;
+  float: right;
+}
+.tabs-total {
+  font-weight: 900;
+  color: #f68236;
 }
 .link {
   font-family: 'Lato';
@@ -93,9 +103,22 @@
   width: 174px;
   height: 53px;
 }
+.sm-font {
+  font-family: Georgia;
+  line-height: 12px;
+  font-size: 15px;
+  color: #606060;
+  text-transform: lowercase;
+}
 .spacing {
   margin: 30px auto;
   padding: auto 30px;
+}
+.hidden {
+  display: none;
+}
+.padding {
+  padding: 20px auto;
 }
 .pricepdp {
   font-style: italic;
@@ -183,6 +206,49 @@ header nav .basket span {
   font-family: 'Lato';
   font-size: 15px;
   margin-left: 2px;
+}
+footer {
+  font-family: 'Lato';
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+footer div {
+  width: 25%;
+  height: 120px;
+  border-left: 1px solid #e5e5e5;
+  margin-top: 50px;
+  padding-left: 20px;
+  line-height: 20px;
+}
+footer li {
+  text-transform: capitalize;
+  font-weight: 100;
+  font-size: 14px;
+  padding-left: 2px;
+}
+footer .social ul {
+  margin: 20px auto 0 -5px;
+}
+footer .social li {
+  width: 27px;
+  height: 27px;
+  border-radius: 0;
+  margin: 0 2px;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #606060;
+  border: 0.5px solid #606060;
+}
+footer .social li:hover {
+  color: #fff;
+  border: 0.5px solid #fff;
+  background: #606060;
 }
 .jumbotron {
   display: flex;
@@ -297,48 +363,64 @@ header nav .basket span {
   background: #fff;
   padding-top: 30px;
 }
-footer {
-  font-family: 'Lato';
+.carousel {
+  margin: 0 auto;
+  position: relative;
+  width: 95%;
+  padding: 10px 40px;
+  background: #e5e5e5;
+}
+.carousel img {
+  width: 130px;
+  height: 130px;
+  display: block;
+}
+.arrow {
+  border: 0;
+  position: absolute;
   height: 100%;
-  background: #fff;
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 100px;
-}
-footer div {
-  width: 25%;
-  height: 120px;
-  border-left: 1px solid #e5e5e5;
-  margin-top: 50px;
-  padding-left: 20px;
-  line-height: 20px;
-}
-footer li {
-  text-transform: capitalize;
-  font-weight: 100;
-  font-size: 14px;
-  padding-left: 2px;
-}
-footer .social ul {
-  margin: 20px auto 0 -5px;
-}
-footer .social li {
-  width: 27px;
-  height: 27px;
-  border-radius: 0;
-  margin: 0 2px;
-  font-size: 16px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   padding: 0;
-  color: #606060;
-  border: 0.5px solid #606060;
+  width: 40px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+  outline: none;
 }
-footer .social li:hover {
-  color: #fff;
-  border: 0.5px solid #fff;
-  background: #606060;
+.arrow:focus {
+  outline: none;
+}
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+.prev {
+  background: #e5e5e5;
+  top: 0;
+  left: 0;
+}
+.next {
+  background: #e5e5e5;
+  top: 0;
+  right: 0;
+}
+.gallery {
+  width: 100%;
+  overflow: hidden;
+}
+.gallery ul {
+  height: 130px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  /* remove white-space between inline-block'ed li */
+  /* http://davidwalsh.name/remove-whitespace-inline-block */
+  font-size: 0;
+}
+.gallery li {
+  display: inline-block;
 }
 #products {
   transition: 1s;
@@ -419,63 +501,155 @@ footer .social li:hover {
   align-items: center;
   flex-direction: column;
 }
-.carousel {
+.pdp-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin: 0 auto;
-  position: relative;
+  background: #ffffff;
+}
+#cart {
+  background: #ffffff;
+  text-align: center;
+}
+#cart table {
   width: 95%;
-  padding: 10px 40px;
-  background: #e5e5e5;
+  /* Ширина таблицы */
+  border-collapse: collapse;
+  /* Убираем двойные линии между ячейками */
+  border: 2px solid white;
+  /* Прячем рамку вокруг таблицы */
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 40px 0;
+  min-width: 340px;
+  font-family: 'Lato';
 }
-.carousel img {
-  width: 130px;
-  height: 130px;
-  /* по умолчанию inline, в ряде браузеров это даст лишнее пространство вокруг элементов */
-  display: block;
+#cart thead th {
+  text-transform: uppercase;
+  font-weight: 100;
 }
-.arrow {
+#cart tbody {
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+}
+#cart tfoot {
+  background: #e9e9e9;
+}
+#cart tfoot th {
+  text-align: center;
+}
+#cart tfoot tr {
+  height: 7vh;
+}
+#cart td,
+#cart th {
+  max-height: 120px;
+  padding: 3px;
+  /* Поля вокруг содержимого таблицы */
   border: 0;
-  position: absolute;
-  height: 100%;
-  padding: 0;
-  width: 40px;
-  font-size: 24px;
-  line-height: 24px;
-  color: #444;
-  display: block;
-  outline: none;
+  text-align: left;
+  /* Выравнивание по левому краю */
+  vertical-align: middle;
 }
-.arrow:focus {
-  outline: none;
+#cart td img,
+#cart th img {
+  vertical-align: baseline;
+  margin: 0 auto;
+  height: 120px;
+  border: 1px solid #e5e5e5;
 }
-.arrow:hover {
-  background: #ccc;
+#cart th {
+  color: #606060;
+  text-transform: capitalize;
+}
+#cart .picture {
+  width: 130px;
+}
+#cart .title-tab,
+#cart .amount-tab,
+#cart .delete-tab {
+  text-align: center;
+}
+#cart .color-tab,
+#cart .size-tab,
+#cart .qty-tab {
+  text-align: left;
+}
+#cart .qty-tab input {
+  text-align: center;
+  outline-offset: none;
+  outline: none;
+  font-family: 'Lato';
+  border: 0;
+}
+#cart .qty-tab input[type=number]::-webkit-inner-spin-button,
+#cart .qty-tab input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+  font-size: 20px;
+  transform: translateX(0px);
+}
+#cart .amount-tab {
+  letter-spacing: 2px;
+}
+#cart .delete-tab {
+  color: #606060;
+  font-weight: bolder;
+  text-transform: lowercase;
   cursor: pointer;
 }
-.prev {
-  background: #e5e5e5;
-  top: 0;
-  left: 0;
+#cart .delete-tab:hover {
+  transform: translateX(-20px);
 }
-.next {
-  background: #e5e5e5;
-  top: 0;
-  right: 0;
-}
-.gallery {
+.cart-button {
+  display: flex;
+  justify-content: right;
+  align-items: center;
   width: 100%;
-  overflow: hidden;
+  margin: 0 auto;
+  background: #ffffff;
 }
-.gallery ul {
-  height: 130px;
-  width: 9999px;
-  margin: 0;
+footer {
+  font-family: 'Lato';
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+footer div {
+  width: 25%;
+  height: 120px;
+  border-left: 1px solid #e5e5e5;
+  margin-top: 50px;
+  padding-left: 20px;
+  line-height: 20px;
+}
+footer li {
+  text-transform: capitalize;
+  font-weight: 100;
+  font-size: 14px;
+  padding-left: 2px;
+}
+footer .social ul {
+  margin: 20px auto 0 -5px;
+}
+footer .social li {
+  width: 27px;
+  height: 27px;
+  border-radius: 0;
+  margin: 0 2px;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
-  list-style: none;
-  transition: margin-left 250ms;
-  /* remove white-space between inline-block'ed li */
-  /* http://davidwalsh.name/remove-whitespace-inline-block */
-  font-size: 0;
+  color: #606060;
+  border: 0.5px solid #606060;
 }
-.gallery li {
-  display: inline-block;
+footer .social li:hover {
+  color: #fff;
+  border: 0.5px solid #fff;
+  background: #606060;
 }

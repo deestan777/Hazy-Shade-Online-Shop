@@ -40,7 +40,7 @@
     <div class="search">
         <i class="fas fa-search"></i>
     </div>
-    <a href="./html/basket.html">
+    <a href="./basket.html">
         <div class="basket">
             <i class="fas fa-shopping-bag"></i><span>Basket(0)</span>
         </div>
@@ -48,10 +48,17 @@
 </nav>
 </header>
 <section id="pdp">
-
-
-
 </section>
+
+<div class="pdp-button">
+
+        <form method="GET" action="/html/basket.html">
+            <button href="" onClick="localStorage.setItem('items-in-cart', JSON.stringify(itemsInCart))" class="btn2 spacing lg" id="addBtn" >ADD TO CART</button>
+        </form>
+            
+</div>
+
+
 <section class="slider">
 <div id="carousel" class="carousel">
         <button class="arrow prev">⇦</button>
@@ -135,8 +142,9 @@
     </ul>
 </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../js/pdp.js"></script>
 <script src="../js/carousel.js"></script>
 <script src="../js/category.js"></script>  
-<script src="../js/pdp.js"></script>  
 </body>
 </html>
