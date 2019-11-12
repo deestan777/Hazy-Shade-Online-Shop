@@ -13,7 +13,7 @@ categoryLinks.addEventListener('click',function(event){
     localStorage.setItem('category',target.innerHTML);
 });
 
-xhr.open('GET', '../js/JSON/products.json', true); // метод, путь, асинхронно синхронно
+xhr.open('GET', './js/JSON/products.json', true); // метод, путь, асинхронно синхронно
 xhr.send();
 xhr.onreadystatechange = function(){
     if (this.readyState != 4) return;
